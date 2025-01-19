@@ -12,11 +12,11 @@ let dragOffset = new THREE.Vector3();
 const COLOR_CHANGE_INTERVAL = 100;
 const STATES = {
     idle: { speed: 0, duration: 0 },
-    extremeFast: { speed: 0.3, duration: 2000 },
+    extremeFast: { speed: 0.6, duration: 2000 },
     pause1: { speed: 0, duration: 1000 },
-    mediumFast: { speed: 0.1, duration: 2000 },
+    mediumFast: { speed: 0.2, duration: 2000 },
     pause2: { speed: 0, duration: 1000 },
-    finalSpin: { speed: 0.3, duration: 39000 }
+    finalSpin: { speed: 0.8, duration: 39000 }
 };
 function getRandomColor() {
     return new THREE.Color(
