@@ -2,7 +2,7 @@
 
 [LINK to live site](https://ahmetuman.github.io/oiia-cat/)
 
-Press `R` to start and reset, click on the cat to move in 2D.
+Press `R` to start and reset, `↑` and `↓` to scale, click on the cat to move in 2D.
 
 [Music Source](https://tuna.voicemod.net/sound/beb8dd39-d94b-4429-9012-5244a1a3f34a)
 
