@@ -150,6 +150,15 @@ function onMouseMove(event) {
 function onMouseUp() {
     dragging = false;
 }
+function scaleModel(scaleFactor) {
+    if (model) {
+        model.scale.set(
+            model.scale.x * scaleFactor,
+            model.scale.y * scaleFactor,
+            model.scale.z * scaleFactor
+        );
+    }
+}
 window.onload = init;
 window.addEventListener('keydown', (event) => {
     if (event.key.toLowerCase() === 'r') {
@@ -158,6 +167,10 @@ window.addEventListener('keydown', (event) => {
         } else {
             resetPattern();
         }
+    } else if (event.key === 'ArrowUp') {
+        scaleModel(1.1);
+    } else if (event.key === 'ArrowDown') {
+        scaleModel(0.9);
     }
 });
 window.addEventListener('resize', () => {
